@@ -47,3 +47,63 @@
 .toggle-all:checked + label:before {
   color: #737373;
 }
+
+.todo-list li label .description {
+  color: #4d4d4d;
+  display: block;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: color .4s;
+  word-break: break-all;
+  font-size: 24px;
+}
+
+.time-text {
+  margin-left: 8px;
+  color: gray;
+  font-size: 13px;
+}
+
+.todo-list li .icon {
+  color: #cc9a9a;
+  cursor: pointer;
+  font-size: 34px;
+  height: 40px;
+  margin: auto 0;
+  transition: color .2s ease-out;
+  width: 30px;
+}
+
+.todo-list li .timer .icon-pause,
+.todo-list li .timer .icon-play {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+.todo-list li .timer .icon-play {
+  font-size: 15px;
+}
+
+.icon-play:after {
+  content: "▶";
+}
+
+.icon-pause:after {
+  content: "⏸";
+}
+
+.todo-list li .icon-edit {
+  bottom: -3px;
+  font-size: 19px;
+  position: absolute;
+  right: 45px;
+  top: 0;
+}
+
+.todo-list li .icon-destroy {
+  bottom: -3px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
