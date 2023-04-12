@@ -1,0 +1,109 @@
+.edit {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toggle-all {
+  width: 1px;
+  height: 1px;
+  border: none;
+  /* Mobile Safari */
+  opacity: 0;
+  position: absolute;
+  right: 100%;
+  bottom: 100%;
+}
+
+.toggle-all + label {
+  width: 60px;
+  height: 34px;
+  font-size: 0;
+  position: absolute;
+  top: -52px;
+  left: -13px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.toggle-all + label:before {
+  content: "❯";
+  font-size: 22px;
+  color: #e6e6e6;
+  padding: 10px 27px 10px 27px;
+}
+
+.toggle-all:checked + label:before {
+  color: #737373;
+}
+
+.todo-list li label .description {
+  color: #4d4d4d;
+  display: block;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: color .4s;
+  word-break: break-all;
+  font-size: 24px;
+}
+
+.time-text {
+  margin-left: 8px;
+  color: gray;
+  font-size: 13px;
+}
+
+.todo-list li .icon {
+  color: #cc9a9a;
+  cursor: pointer;
+  font-size: 34px;
+  height: 40px;
+  margin: auto 0;
+  transition: color .2s ease-out;
+  width: 30px;
+}
+
+.todo-list li .timer .icon-pause,
+.todo-list li .timer .icon-play {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+.todo-list li .timer .icon-play {
+  font-size: 15px;
+}
+
+.icon-play:after {
+  content: "▶";
+}
+
+.icon-pause:after {
+  content: "⏸";
+}
+
+.todo-list li .icon-edit {
+  bottom: -3px;
+  font-size: 19px;
+  position: absolute;
+  right: 45px;
+  top: 0;
+}
+
+.todo-list li .icon-destroy {
+  bottom: -3px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
